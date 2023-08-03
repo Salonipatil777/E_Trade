@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg1">
+        <div class="m-lg-5 m-3">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 fixed-top">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Navbar brand -->
+                        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                            <img src="./images/logo.png" class="w-100" alt="MDB Logo" loading="lazy" />
+                        </a>
+                        <!-- Left links -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-3" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-3" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-3" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-3" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Left links -->
+                    </div>
+                    <!-- Collapsible wrapper -->
+
+                    <!-- Right elements -->
+                    <div class="d-flex align-items-center justify-content-center">
+                        <!-- Icon -->
+                        <a class="text-reset me-3" href="#">
+                            <i class="fa-solid fa-magnifying-glass  navicons" type="button" data-mdb-toggle="modal"
+                                data-mdb-target="#exampleModal"></i>
+                        </a>
+                        <a class="text-reset me-3" href="#">
+                            <i class="fa-regular fa-heart  navicons"></i></a>
+                        <a class="text-reset me-3" href="#" type="button" data-mdb-toggle="offcanvas"
+                            data-mdb-target="#offcanvasRight" aria-controls="offcanvasRight ">
+                            <i class="fa-solid fa-cart-shopping navicons"></i> </a>
+                        <!-- Notifications -->
+                        <!-- Avatar -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle d-flex align-items-center justify-content-center hidden-arrow"
+                                href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-regular fa-user text-dark navicons"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a class="dropdown-item" href="#">My profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right elements -->
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+
+        
+            <!-- give id to search icon exampleModal -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <div class="input-group rounded">
+                                    <input type="search" class="form-control rounded pe-5 py-4"
+                                        placeholder="Write Something..." aria-label="Search"
+                                        aria-describedby="search-addon" />
+                                    <span class="input-group-text border-0" id="search-addon">
+                                        <i class="fas fa-search fs-5 mt-3"></i>
+                                    </span>
+                                </div>
+                            </h5>
+                            <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-cols-1">
+                                <div class="col">
+                                    <div class="card mb-3 border border-1">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="./images/images/product/electric/product-09.png"
+                                                    alt="Trendy Pants and Shoes"
+                                                    class="img-fluid rounded-start m-3 mx-3" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="pg">
+                                                        <div class="mb-2">
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i>150+ Reviews</i>
+                                                        </div>
+                                                        <h6 class="card-title">Media Remote</h6>
+                                                        <div class="fw-bold d-flex align-items-center">
+                                                            <h6 class="text-secondary">$29.99</h6>
+                                                            <h5 class="text-secondary mx-2"><del>$49.99</del></h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="cart mt-2 border border-0 cartbtn2"><i
+                                                                class="fa fa-shopping-cart"></i></button> <br><br>
+                                                        <button class="cart border border-0 cartbtn2"><i
+                                                                class="fa-regular fa-heart "></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card mb-3 border border-1">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="./images/images/product/electric/product-10.png"
+                                                    alt="Trendy Pants and Shoes"
+                                                    class="img-fluid rounded-start m-3 mx-3" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div>
+                                                        <div class="mb-2">
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i class="fa-regular fa-star text-warning"></i>
+                                                            <i>100+ Reviews</i>
+                                                        </div>
+                                                        <h5 class="card-title">HD Camera</h5>
+                                                        <div class="fw-bold d-flex align-items-center">
+                                                            <h6 class="text-secondary">$39.99</h6>
+                                                            <h5 class="text-secondary mx-2"><del>$49.99</del></h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="cart mt-2 border border-0 cartbtn2"><i
+                                                                class="fa fa-shopping-cart "></i></button> <br><br>
+                                                        <button class="cart border border-0 cartbtn2"><i
+                                                                class="fa-regular fa-heart"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- give id to shopping basket icon offcanvasRight -->
+            <!-- offcanvas  -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel" class="fs-4 text-dark fw-bold">Cart Review</h5>
+                    <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <div class="card mb-3 position-relative">
+                                <div class="row g-0">
+                                    <div class="col-lg-3">
+                                        <img src="./images/images/product/electric/product-01.png" class="w-100 m-4"
+                                            alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="card-body ms-lg-4 d-lg-flex">
+                                            <div>
+                                                <div class="">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i><span> (64)</span>
+                                                </div>
+                                                <h5 class="card-title text-dark fw-bold my-3 me-2">Wireless PS Handler
+                                                </h5>
+                                                <p class="card-text">
+                                                    $155.00
+                                                </p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="minus" onclick="handleDecrement()">
+                                                    <div>-</div>
+                                                </div>
+                                                <div class="mx-3" id="count"> </div>
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="plus" onclick="handleIncrement()">
+                                                    <div>+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="close" type="button" class="btn-close position-absolute top-0 left-0"
+                                    aria-label="Close"
+                                    onclick="this.parentNode.parentNode.remove(); return false;"></button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 position-relative">
+                                <div class="row g-0">
+                                    <div class="col-lg-3">
+                                        <img src="./images/images/product/electric/product-02.png" class="w-100 m-4"
+                                            alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="card-body ms-lg-4 d-lg-flex">
+                                            <div>
+                                                <div class="">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-regular fa-star text-warning"></i><span> (48)</span>
+                                                </div>
+                                                <h5 class="card-title text-dark fw-bold my-3 me-2">Wireless PS Handler
+                                                </h5>
+                                                <p class="card-text">
+                                                    $155.00
+                                                </p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="minus" onclick="handleDecrement2()">
+                                                    <div>-</div>
+                                                </div>
+                                                <div class="mx-3" id="count2"> </div>
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="plus" onclick="handleIncrement2()">
+                                                    <div>+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="close" type="button" class="btn-close position-absolute top-0 left-0"
+                                    aria-label="Close"
+                                    onclick="this.parentNode.parentNode.remove(); return false;"></button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 position-relative">
+                                <div class="row g-0">
+                                    <div class="col-lg-3">
+                                        <img src="./images/images/product/electric/product-03.png" class="w-100 m-4"
+                                            alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="card-body ms-lg-4 d-lg-flex">
+                                            <div>
+                                                <div class="">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-regular fa-star text-warning"></i>
+                                                    <i class="fa fa-regular fa-star text-warning"></i><span> (24)</span>
+                                                </div>
+                                                <h5 class="card-title text-dark fw-bold my-3 me-2">Wireless PS Handler
+                                                </h5>
+                                                <p class="card-text">
+                                                    $155.00
+                                                </p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="minus" onclick="handleDecrement3()">
+                                                    <div>-</div>
+                                                </div>
+                                                <div class="mx-3" id="count3"> </div>
+                                                <div class="d-flex align-items-center justify-content-center rounded-circle my-3 my-lg-0 "
+                                                    style="width: 30px; height: 30px; background-color: gainsboro; cursor: pointer;"
+                                                    id="plus" onclick="handleIncrement3()">
+                                                    <div>+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="close" type="button" class="btn-close position-absolute top-0 left-0"
+                                    aria-label="Close"
+                                    onclick="this.parentNode.parentNode.remove(); return false;"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mx-2">
+                        <div>
+                            <p class="text-dark fw-bold">Subtotal : </p>
+                        </div>
+                        <div>
+                            <p class="text-dark fw-bold">$610.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mx-1">
+                        <div>
+                            <button class="text-light px-5 py-3 border-0 rounded-1 shopNowbtn shadow-lg bg-primary">View
+                                Cart</button>
+                        </div>
+                        <div>
+                            <button
+                                class="text-light px-5 py-3 border-0 rounded-1 shopNowbtn shadow-lg bg-danger">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar end -->
+
+            <!-- slides -->
+            <div id="carouselExampleIndicators" class="carousel slide pb-5 text-center text-lg-start"
+                data-mdb-ride="carousel">
+                <img src="./images/orangebox.png" class="orangebox d-none d-lg-block" alt="">
+                <div class="mx-lg-4">
+                    <div class="carousel-indicators">
+                        <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0"
+                            class="active " style="background-color: #ff497c;" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" class="" style="background-color: #ff497c;"
+                            data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" class="" style="background-color: #ff497c;"
+                            data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" class="" style="background-color: #ff497c;"
+                            data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active py-lg-5">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="mt-5 pt-lg-5">
+                                        <p class="hotDeals"><i class="fas fa-fire"></i> Hot Deal In This Week</p>
+                                        <h1 class="slideTitle mx-3 mx-lg-0">Smart Digital Watch </h1>
+                                        <button class="bg-light px-5 py-3 border-0 shopNowbtn shadow-lg"><i
+                                                class="fa-solid fa-cart-shopping me-2"></i>Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row m-3">
+                                        <div class="col-lg-9"><img src="./images/watch.png" class="w-100" alt="">
+                                        </div>
+                                        <div class="col-lg-3 d-lg-block d-none mt-auto"> <img
+                                                src="./images/headPhone.png" class="w-100" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-lg-5">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="mt-5 pt-lg-5">
+                                        <p class="hotDeals"><i class="fas fa-fire"></i> Hot Deal In This Week</p>
+                                        <h1 class="slideTitle">Roco Wireless Headphone</h1>
+                                        <button class="bg-light px-5 py-3 border-0 shopNowbtn"><i
+                                                class="fa-solid fa-cart-shopping me-2"></i>Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row m-3">
+                                        <div class="col-lg-9"><img src="./images/headPhone.png" class="w-100" alt="">
+                                        </div>
+                                        <div class="col-lg-3 d-lg-block d-none mt-auto"> <img src="./images/watch.png"
+                                                class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-lg-5">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="mt-5 pt-lg-5">
+                                        <p class="hotDeals"><i class="fas fa-fire"></i> Hot Deal In This Week</p>
+                                        <h1 class="slideTitle mx-3 mx-lg-0">Smart Digital Watch </h1>
+                                        <button class="bg-light px-5 py-3 border-0 shopNowbtn"><i
+                                                class="fa-solid fa-cart-shopping me-2"></i>Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row m-3">
+                                        <div class="col-lg-9"><img src="./images/watch.png" class="w-100" alt="">
+                                        </div>
+                                        <div class="col-lg-3 d-lg-block d-none mt-auto"> <img
+                                                src="./images/headPhone.png" class="w-100" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-lg-5">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="mt-5 pt-lg-5">
+                                        <p class="hotDeals"><i class="fas fa-fire"></i> Hot Deal In This Week</p>
+                                        <h1 class="slideTitle">Roco Wireless Headphone</h1>
+                                        <button class="bg-light px-5 py-3 border-0 shopNowbtn"><i
+                                                class="fa-solid fa-cart-shopping me-2"></i>Shop Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row m-3">
+                                        <div class="col-lg-9"><img src="./images/headPhone.png" class="w-100" alt="">
+                                        </div>
+                                        <div class="col-lg-3 d-lg-block d-none mt-auto"> <img src="./images/watch.png"
+                                                class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider cards  -->
+    <div class="m-lg-5 px-lg-5 m-3 sliderbtn">
+        <p class="hotDeals">
+            <i class="fa fa-tags"></i> Categories
+        </p>
+        <h2 class="title2">Browse by Category</h2>
+        <div id="carouselExampleIndicators1" class="carousel slide carousel2" data-mdb-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-mdb-target="#carouselExampleIndicators1" data-mdb-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-mdb-target="#carouselExampleIndicators1" data-mdb-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-mdb-target="#carouselExampleIndicators1" data-mdb-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-5 mt-1">
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-1.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Watch</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-2.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Computer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-9.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Headphone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-4.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Phones</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-5.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Computers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-6.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Laptops</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-5 mt-1">
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-7.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Networking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-8.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">PC Gaming</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-9.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Headphone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-10.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Cameras</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-11.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Phones</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-1.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Watch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-5 mt-1">
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-2.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Monitor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-4.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Headphone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-5.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Computer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-6.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Laptop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-7.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">Networking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow pt-4 border categorycards mb-5">
+                                <img src="./images/images/product/categories/elec-8.png"
+                                    class="card-img-top w-50 mx-auto" alt="Sunset Over the Sea" />
+                                <div class="card-body">
+                                    <p class="card-text text-center">PC Gaming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev slidebtns1" type="button" data-mdb-target="#carouselExampleIndicators1"
+                data-mdb-slide="prev">
+                <i class="fa fa-long-arrow-left text-dark"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next slidebtns2" type="button" data-mdb-target="#carouselExampleIndicators1"
+                data-mdb-slide="next">
+                <i class="fa fa-long-arrow-right text-dark"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- enhance -->
+    <div class="m-lg-4">
+        <div class="m-lg-5 px-lg-5 m-3 pt-4 enhancebg d-md-block d-none">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="mt-5 pt-lg-5 text-center text-lg-start">
+                        <p class="hotDeals"><i class="fa fa-headphones-alt mt-lg-5 pt-lg-5"></i> Don’t Miss!!</p>
+                        <h1 class="enhanceTitle my-lg-3">Enhance Your Music Experience</h1>
+                        <button class="enhancebtn rounded px-5 py-3 my-4">
+                            Check it Out!
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="./images/headphone2.png" class="w-100 p-5" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m-lg-5 px-lg-5 m-3 pt-4 enhancebg d-block d-md-none">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="mt-5 pt-lg-5 text-center text-lg-start">
+                        <p class="hotDeals"><i class="fa fa-headphones-alt mt-lg-5 pt-lg-5"></i> Don’t Miss!!</p>
+                        <h1 class="enhanceTitle my-lg-3">Enhance Your Music Experience</h1>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="./images/headphone2.png" class="w-100 p-5" alt="">
+                    <div class="d-flex justify-content-center"><button class="enhancebtn rounded px-5 py-3 my-3">
+                            Check it Out!
+                        </button></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Explore product -->
+    <div class="m-lg-5 px-lg-5 m-3">
+        <div class="my-5 m-3 m-lg-0">
+            <p class="fw-bold" style="color: rgb(134, 5, 181);"><i class="fa fa-shopping-basket"></i> Our Products</p>
+            <h2 class="text-dark">Explore our Products</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 m-1 m-lg-0 topp">
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-01.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Yantiti Leather & Canvas Bags</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$19.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-02.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Level 20 RGB Cherry</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$39.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-dark">
+                        40% off
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-03.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Logitech Streamcam</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$15.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-04.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">3D™ wireless headset</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$29.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-dark">
+                        20% off
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-05.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star-half" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Bass Meets Clarity</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$14.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-06.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Mice Logitech</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$29.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-dark">
+                        40% off
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-07.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">Zone Headphone</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$19.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="hoverimgdiv position-relative">
+                        <img src="./images/images/product/electric/product-08.png" class="card-img-top cardimg3"
+                            alt="Hollywood Sign on The Hill" />
+                        <div class="d-flex justify-content-center"><a href="/" class="hoverbtn px-4 p-2">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center text-lg-start mx-1">
+                        <div class="mt-3">
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                            <span>(64)</span>
+                        </div>
+                        <h6 class="card-title my-2 fw-bolder text-secondary">3D™ wireless headset</h6>
+                        <p class="card-text">
+                            <span class="text-dark fs-5 fw-bold">$31.99</span><span
+                                class="text-secondary fs-5 fw-bold mx-3"><del>$49.99</del></span>
+                        </p>
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-dark">
+                        20% off
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button class="btn rounded p-3 px-4 fw-bold fs-6 text-capitalize my-4 mb-lg-0"
+                style="background-color:rgb(233, 235, 241);">
+                View All Products
+            </button>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="p-lg-5 p-4 text-center text-lg-start shadow-1-strong rounded" style="background-color: #f9f3f0;">
+        <div class="mx-4">
+            <p class="fw-bold" style="color: #ff497c;"><i class="fa fa-quote-left"></i> Testimonials</p>
+            <h2 class="text-dark">Users Feedback</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 my-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-11">
+                        <div class="card">
+                            <div class="card-body m-3">
+                                <div class="row">
+                                    <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp"
+                                            class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="200"
+                                            height="200" />
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <i class="fa fa-quote-left fa-3x text-dark"></i>
+                                        <p class="text-muted fw-light mb-4">
+                                            "It’s amazing how much easier it has been to
+                                            meet new people and create instantly non
+                                            connections."
+                                        </p>
+                                        <p class="fw-bold lead mb-2"><strong>Priya Patel</strong></p>
+                                        <p class="fw-bold text-muted mb-0">Product manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-11">
+                        <div class="card">
+                            <div class="card-body m-3">
+                                <div class="row">
+                                    <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                            class="rounded-circle img-fluid shadow-1 w-100" alt="woman avatar"
+                                            width="200" height="200" />
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <i class="fa fa-quote-left fa-3x text-dark"></i>
+
+                                        <p class="text-muted fw-light mb-4">
+                                            "It’s amazing how much easier it has been to
+                                            meet new people and create instantly non
+                                            connections." </p>
+                                        <p class="fw-bold lead mb-2"><strong>Viraj Ghadage</strong></p>
+                                        <p class="fw-bold text-muted mb-0">Tester</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- new Arrivals -->
+    <section class="m-lg-5 m-3 p-2">
+        <div class="m-4">
+            <p class="fw-bold" style="color: rgb(140 113 219)"><i class="fa fa-shopping-basket"></i> This Week’s</p>
+            <h2 class="text-dark">New Arrivals</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 topp">
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="">
+                        <img src="./images/images/product/electric/product-05.png"
+                            class="card-img-top cardimg3 rounded-circle" alt="Hollywood Sign on The Hill" />
+                    </div>
+                    <div class="card-body text-center text-lg-start my-4">
+                        <h6 class="card-title my-2 fw-bolder text-secondary text-center">Demon's Souls</h6>
+                        <p class="card-text text-center">
+                            <span class="text-secondary fs-5 fw-bold"><del>$40</del></span>
+                            <span class="text-dark fs-5 fw-bold mx-3">$20</span>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-eye"></i></a><a href="/"
+                                class="hoverbtn2 px-4 p-2 text-light">Add
+                                To Cart</a>
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="">
+                        <img src="./images/images/product/electric/product-06.png"
+                            class="card-img-top cardimg3 rounded-circle" alt="Hollywood Sign on The Hill" />
+                    </div>
+                    <div class="card-body text-center text-lg-start my-4">
+                        <h6 class="card-title my-2 fw-bolder text-secondary text-center">Google Home</h6>
+                        <p class="card-text text-center">
+                            <span class="text-secondary fs-5 fw-bold"><del>$50</del></span>
+                            <span class="text-dark fs-5 fw-bold mx-3">$30</span>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-eye"></i></a><a href="/"
+                                class="hoverbtn2 px-4 p-2 text-light">Add
+                                To Cart</a>
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill badge-dark">
+                        40% off
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard">
+                    <div class="">
+                        <img src="./images/images/product/electric/product-07.png"
+                            class="card-img-top cardimg3 rounded-circle" alt="Hollywood Sign on The Hill" />
+                    </div>
+                    <div class="card-body text-center text-lg-start my-4">
+                        <h6 class="card-title my-2 fw-bolder text-secondary text-center">Netfilx Remot</h6>
+                        <p class="card-text text-center">
+                            <span class="text-secondary fs-5 fw-bold"><del>$40</del></span>
+                            <span class="text-dark fs-5 fw-bold mx-3">$30</span>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-eye"></i></a><a href="/"
+                                class="hoverbtn2 px-4 p-2 text-light">Add
+                                To Cart</a>
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100 hovercard position-relative">
+                    <div class="">
+                        <img src="./images/images/product/electric/product-08.png"
+                            class="card-img-top cardimg3 rounded-circle" alt="Hollywood Sign on The Hill" />
+                    </div>
+                    <div class="card-body text-center text-lg-start my-4">
+                        <h6 class="card-title my-2 fw-bolder text-secondary text-center">Digital Accessories</h6>
+                        <p class="card-text text-center">
+                            <span class="text-secondary fs-5 fw-bold"><del>$30</del></span>
+                            <span class="text-dark fs-5 fw-bold mx-3">$20</span>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-eye"></i></a><a href="/"
+                                class="hoverbtn2 px-4 p-2 text-light">Add
+                                To Cart</a>
+                            <a href="/" class="px-3 py-2 text-dark mx-2"
+                                style="background-color: rgb(231, 245, 245);"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill badge-dark">
+                        20% off
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- most sold  -->
+    <div class="m-lg-5 m-3 p-2">
+        <div class="m-4 text-center">
+            <p class="fw-bold" style="color: rgb(140 113 219)"><i class="fa fa-star"></i> Most Sold
+            </p>
+            <h2 class="text-dark fw-bolder">Most Sold in eTrade Store
+            </h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 mx-md-5 mx-lg-0 my-5">
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-09.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Media Remote</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$20</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-10.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>250+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">HD Camera</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$40</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-11.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>130+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Gaming Controller</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$30</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-12.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Wall Mount </h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$19</h6>
+
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-13.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Lenevo Laptop</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$999.99</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-14.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Juice Grinder Machine</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$29.99</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-15.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa-regular fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Wireless Headphone</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$59.99</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 border border-1 hovercard">
+                    <div class="row">
+                        <div class="col-md-4 hoverimgdiv">
+                            <img src="./images/images/product/electric/product-16.png" alt="Trendy Pants and Shoes"
+                                class="img-fluid rounded-start m-3 mx-3 cardimg3" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="pg">
+                                    <div class="mt-3 mb-2">
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i class="fa fa-star-half-alt" style="color: #ffdc60; font-size: 13px;"></i>
+                                        <i>150+ Reviews</i>
+                                    </div>
+                                    <h6 class="card-title">Asus Zenbook Laptop</h6>
+                                    <div class="fw-bold d-flex align-items-center">
+                                        <h6 class="text-secondary">$29.99</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mt-lg-0">
+                                    <button class="cart mt-2 border border-0 cartbtn2"><i
+                                            class="fa fa-shopping-cart"></i></button> <br><br>
+                                    <button class="cart border border-0 cartbtn2"><i class="fa-regular fa-heart "></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- why us  -->
+    <div class="m-lg-5 m-3 p-2">
+        <div class="text-center">
+            <p class="fw-bold" style="color: rgb(239, 40, 143)"><i class="fa fa-thumbs-up"></i> Why Us
+            </p>
+            <h2 class="text-dark fw-bolder">Why People Choose Us
+
+            </h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-5 my-1">
+            <div class="col">
+                <div class="card shadow py-3 pt-5 border categorycards mb-5">
+                    <img src="./images/images/icons/service6.png"
+                        class="card-img-top w-25 mx-auto" alt="Sunset Over the Sea" />
+                    <div class="card-body">
+                        <p class="card-text text-center">Fast & Secure Delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow py-3 pt-5 pt-4 border categorycards mb-5">
+                    <img src="./images/images/icons/service7.png"
+                        class="card-img-top w-25 mx-auto" alt="Sunset Over the Sea" />
+                    <div class="card-body">
+                        <p class="card-text text-center">100% Guarantee On Product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow py-3 pt-5 pt-4 border categorycards mb-5">
+                    <img src="./images/images/icons/service8.png"
+                        class="card-img-top w-25 mx-auto" alt="Sunset Over the Sea" />
+                    <div class="card-body">
+                        <p class="card-text text-center">24 Hour Return Policy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow py-3 pt-5 pt-4 border categorycards mb-5">
+                    <img src="./images/images/icons/service9.png"
+                        class="card-img-top w-25 mx-auto" alt="Sunset Over the Sea" />
+                    <div class="card-body">
+                        <p class="card-text text-center">24 Hour Return Policy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow py-3 pt-5 pt-4 border categorycards mb-5">
+                    <img src="./images/images/icons/service10.png"
+                        class="card-img-top w-25 mx-auto" alt="Sunset Over the Sea" />
+                    <div class="card-body">
+                        <p class="card-text text-center">Next Level Pro Quality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 cards -->
+    <div class="m-lg-5 m-3 px-lg-4">
+        <div class="row">
+            <div class="col-lg-6 my-2">
+                <div class="card h-100 cardbg1">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6"><img src="./images/cardbg.png" class="w-100 cardimg mb-lg-1 mb-3"
+                                        alt=""></div>
+                                <div class="col-md-6 my-auto text-center text-lg-start">
+                                    <h2 class="card-title text-light">Rich Sound for less</h2>
+                                    <p class="card-text">
+                                        <a href="/" class="text-light">Collections <i
+                                                class="fa fa-long-arrow-right mx-2"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-2">
+                <div class="card h-100 cardbg2">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 my-auto text-center text-lg-start">
+                                    <p class="card-text text-secondary ms-3">
+                                        50% Offer In Winter
+                                    </p>
+                                    <h2 class="card-title text-light ms-3">Get VR Reality Glass</h2>
+
+                                </div>
+                                <div class="col-md-6"><img src="./images/cardbg2.png"
+                                        class="w-100 mt-lg-4 mt-2 cardimg2" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- newsletter -->
+    <div class="mx-lg-4">
+        <div class="m-lg-5 p-lg-5 m-3 pt-4 newsletterbg">
+            <div class="my-5 text-center text-lg-start ps-lg-5">
+                <p class="newsletter"><i class="fa-regular fa-envelope"></i></i> Newsletter</p>
+                <h1 class="enhanceTitle my-lg-3">Get weekly update</h1>
+                <div class="d-lg-flex align-items-center my-lg-5 my-3">
+                    <input type="text" placeholder="xyz@gmail.com"
+                        class="border border-0 p-3 px-5 me-lg-3 my-4 my-lg-0">
+                    <button class="btn btn-dark rounded p-3 px-4 fw-bold fs-6 text-capitalize mb-4 mb-lg-0">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-lg-5 px-lg-5 m-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-center ">
+                    <div><img src="./images/service1.png" class="w-75" alt=""></div>
+                    <div>
+                        <p class="text-dark fw-bold mb-0">Fast & Secure Delivery</p>
+                        <p class="text-secondary mb-0">Tell about your service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-center ">
+                    <div><img src="./images/service2.png" class="w-75" alt=""></div>
+                    <div>
+                        <p class="text-dark fw-bold mb-0">Money Back Guarantee</p>
+                        <p class="text-secondary mb-0">Within 10 days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-center ">
+                    <div><img src="./images/service3.png" class="w-75" alt=""></div>
+                    <div>
+                        <p class="text-dark fw-bold mb-0">24 Hour Return Policy</p>
+                        <p class="text-secondary mb-0">No question ask.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-center ">
+                    <div><img src="./images/service4.png" class="w-75" alt=""></div>
+                    <div>
+                        <p class="text-dark fw-bold mb-0">Pro Quality Support .</p>
+                        <p class="text-secondary mb-0">24/7 Live support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <hr>
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-dark">
+                            Supports
+                        </h6>
+                        <p>
+                            685 Market Street,
+                            Las Vegas, LA 95820,
+                            United States.
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-envelope"></i> example@domain.com
+                        </p>
+
+                        <p><i class="fa-solid fa-phone"></i> (+01) 850-315-5862</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-dark">
+                            Account
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">My account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Login/Register</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cart</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Wishlist</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Shop</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-dark">
+                            Quick links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms Of Use</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">FAQ</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-dark">Download App</h6>
+                        <p>Save $3 With App & New User only
+                            <img src="./images/qrcode.png" class="my-3" alt="">
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- javascript -->
+
+    <script>
+        const totalCount = document.getElementById("count");
+        var count = 0;
+        totalCount.innerHTML = count;
+
+        const handleIncrement = () => {
+            count++;
+            totalCount.innerHTML = count;
+        };
+
+        const handleDecrement = () => {
+            if (count > 0) {
+                count--;
+                totalCount.innerHTML = count;
+            }
+        };
+
+        const totalCount2 = document.getElementById("count2");
+        var count2 = 0;
+        totalCount2.innerHTML = count2;
+
+        const handleIncrement2 = () => {
+            count2++;
+            totalCount2.innerHTML = count2;
+        };
+
+        const handleDecrement2 = () => {
+            if (count2 > 0) {
+                count2--;
+                totalCount2.innerHTML = count2;
+            }
+        };
+        const totalCount3 = document.getElementById("count3");
+        var count3 = 0;
+        totalCount3.innerHTML = count3;
+
+        const handleIncrement3 = () => {
+            count3++;
+            totalCount3.innerHTML = count3;
+        };
+
+        const handleDecrement3 = () => {
+            if (count3 > 0) {
+                count3--;
+                totalCount3.innerHTML = count3;
+            }
+        };
+
+        // const incrementCount = document.getElementById("plus");
+        // const decrementCount = document.getElementById("minus");
+
+        // Add click event to buttons
+        // incrementCount.addEventListener("click", handleIncrement);
+        // decrementCount.addEventListener("click", handleDecrement);
+
+
+
+        // close
+
+        window.onload = function () {
+            document.getElementById('close').onclick = function () {
+                this.parentNode.parentNode.remove();
+                return false;
+            };
+        };
+
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+</body>
+
+</html>
